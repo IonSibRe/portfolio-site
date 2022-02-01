@@ -4,14 +4,116 @@
 
 // ================== Header ==================
 .header-container {
-	margin-bottom: 100rem;
-
 	height: 100vh;
 	width: 100vw;
 	background: url("/img/header-bg.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.header-overlay {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($color: #000000, $alpha: 0.5);
+	z-index: 99;
+}
+
+.header-content-wrap {
+	position: absolute;
+	margin-top: 25vh;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+
+	& > * {
+		color: $text-light;
+	}
+
+	.header-name {
+		margin-bottom: 0.5rem;
+		font-size: $h2-size + 0.5rem;
+		color: $text-primary;
+	}
+
+	.header-title {
+		margin-bottom: 0.5rem;
+		font-size: $h1-size + 0.5rem;
+	}
+
+	.header-subtitle {
+		margin-bottom: 2rem;
+		font-size: $h3-size + 0.5rem;
+	}
+
+	.header-projects-link {
+		padding: 0.75rem 2rem;
+		border-radius: 5px;
+		background-color: $text-primary;
+		font-size: $p-size + 0.25rem;
+
+		& > i {
+			position: relative;
+			top: 2px;
+			margin-left: 0.5rem;
+		}
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
+
+// ================== Projects ==================
+.projects-inner-wrap {
+	width: $container-size;
+	margin: 0 auto;
+}
+
+.projects-title {
+	margin: 3rem 0 2rem 0;
+	font-size: $h2-size;
+	text-align: center;
+}
+
+.projects-cards-wrap {
+	margin-bottom: 20rem;
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.projects-card {
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+	.projects-card-img {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	.projects-card-inner-content-wrap {
+		text-align: center;
+		margin: 0.5rem;
+	}
+
+	.projects-card-title {
+		font-size: $h3-size + 0.25rem;
+	}
+
+	.projects-card-subtitle {
+		font-size: $p-size;
+	}
+
+	.projects-card-link {
+		display: inline-block;
+		margin: 0.5rem 0;
+		padding: 0.5rem 1rem;
+		border-radius: 5px;
+		background-color: $text-primary;
+		color: $text-light;
+	}
 }
 
 // ================== Media Queries ==================
