@@ -1,0 +1,27 @@
+// ================== Variables ==================
+
+// Widths
+$container-size: 1300px;
+
+// Colors
+$font-light: #fff;
+$font-hover: rgb(38, 147, 236);
+
+// ================== Resets ==================
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}

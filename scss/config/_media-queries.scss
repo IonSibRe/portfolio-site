@@ -1,0 +1,43 @@
+// Desktop
+@media screen and (max-width: 1300px) {
+	// Navbar
+	.navbar .nav-inner {
+		width: 95%;
+	}
+}
+
+// Tablet
+@media screen and (max-width: 768px) {
+	// Navbar
+	.navbar .nav-inner {
+		width: 100%;
+	}
+
+	.navbar .nav-ul {
+		justify-content: center;
+	}
+}
+
+// Mobile
+@media screen and (max-width: 450px) {
+	// Navbar
+	.navbar .nav-inner {
+		padding: 1rem 0 0 0;
+	}
+
+	.navbar .nav-ul {
+		flex-direction: column;
+	}
+
+	.navbar .nav-li {
+		width: 100%;
+		margin: 0;
+		padding: 0.5rem 0;
+		text-align: center;
+		border-top: 1px solid #ccc;
+
+		&:last-child {
+			border-bottom: 1px solid #ccc;
+		}
+	}
+}
