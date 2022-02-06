@@ -84,12 +84,20 @@
 }
 
 .projects-card {
+	display: flex;
+	flex-direction: column;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 
 	.projects-card-img {
+		flex: 3;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.projects-card-content {
+		flex: 1;
 	}
 
 	.projects-card-inner-content-wrap {
